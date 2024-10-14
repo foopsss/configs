@@ -34,7 +34,7 @@
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias brightness="cat /sys/class/backlight/amdgpu_bl0/actual_brightness"
 	alias maxbrightness="cat /sys/class/backlight/amdgpu_bl0/max_brightness"
-	alias makepdf="convert \*.png my_pdf.pdf"
+	alias makepdf="magick \*.png my_pdf.pdf"
 	alias restart="reboot"
 	alias sudo="doas"
 
