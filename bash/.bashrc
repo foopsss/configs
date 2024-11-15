@@ -13,6 +13,9 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# Add the rustup command to the PATH variable.
+export PATH=$PATH:/home/lucas/.cargo/bin
+
 # Set radeonsi as the driver for VDPAU.
 # Normally, VDPAU sets it correctly by default, but this is just to make sure.
 export VDPAU_DRIVER=radeonsi
