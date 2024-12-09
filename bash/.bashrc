@@ -36,6 +36,9 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 	. /usr/share/bash-completion/completions/git
 fi
 
+# Bash completions for doas.
+complete -F _root_command doas
+
 # Export a Firefox variable to use it with Wayland.
 if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
 	export MOZ_ENABLE_WAYLAND=1

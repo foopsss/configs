@@ -14,7 +14,7 @@
 	# Formato del prompt.
 	PS1="${RED_BD}[${RESET}${YELLOW_BD}\u${RESET}${GREEN_BD}@${RESET}${SKYBLUE_BD}\h${RESET} ${PINK_BD}\w${RESET}${RED_BD}]${RESET} ${YELLOW2_BD}⚡${RESET} "
 	
-# Alias.
+# Aliases.
 
 	# Backup scripts.
 	alias copy="cd $HOME/Documentos/GitHub/scripts/Backups/Bash && bash Backups.sh && cd"
@@ -28,11 +28,4 @@
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
-	alias brightness="cat /sys/class/backlight/amdgpu_bl0/actual_brightness"
-	alias maxbrightness="cat /sys/class/backlight/amdgpu_bl0/max_brightness"
 	alias makepdf="magick \*.png my_pdf.pdf"
-
-	# Programs.
-	alias apostrophe="flatpak run org.gnome.gitlab.somas.Apostrophe"
-	alias firefox="firefox-bin"
-	alias thunderbird="thunderbird-bin"
