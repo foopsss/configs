@@ -16,16 +16,15 @@
 	
 # Aliases.
 
-	# Backup scripts.
-	alias copy="cd $HOME/Documentos/GitHub/scripts/Backups/Bash && bash Backups.sh && cd"
-
 	# Directories.
 	alias gitdir="cd $HOME/Documentos/GitHub"
 
-	# Menu scripts.
+	# Scripts.
+	alias copy="cd $HOME/Documentos/GitHub/scripts/Backups/Bash && bash Backups.sh && cd"
 	alias adbtool="cd $HOME/Documentos/GitHub/scripts/ADB/Bash/ && bash ADBTool.sh && cd"
 	alias genscript="cd $HOME/Documentos/GitHub/scripts/Automatización/Gentoo/GenScript && bash GenScript.sh && cd"
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
+	alias wikibot="cd Documentos/bot && source bin/activate && cd pywikibot && python pwb.py login"
