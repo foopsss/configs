@@ -13,17 +13,26 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# Set radeonsi as the driver for VDPAU.
-# Normally, VDPAU sets it correctly by default, but this is just to make sure.
+# Set radeonsi as the driver for VDPAU. Normally, VDPAU sets it
+# correctly by default, but this is just to make sure.
 export VDPAU_DRIVER=radeonsi
 
-# Check for the ".bash_aliases" file.
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+# Export a Firefox variable to use it with Wayland.
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+	export MOZ_ENABLE_WAYLAND=1
 fi
 
-# Allow the GNOME Terminal to inherit the previous working directory on a new tab.
-# Also allows to get notified of long-running commands finishing.
+# Bash completions for doas.
+complete -F _root_command doas
+
+# Check for the ".bash_custom" file.
+if [ -f ~/.bash_custom ]; then
+	. ~/.bash_custom
+fi
+
+# Allow the GNOME Terminal to inherit the previous working
+# directory on a new tab. Also allows to get notified of
+# long-running commands finishing.
 if [ "$TERM" == "xterm-256color" ]; then
 	. /etc/profile.d/vte-2.91.sh
 fi
@@ -31,14 +40,6 @@ fi
 # Bash completions for git.
 if [ -f /usr/share/bash-completion/completions/git ]; then
 	. /usr/share/bash-completion/completions/git
-fi
-
-# Bash completions for doas.
-complete -F _root_command doas
-
-# Export a Firefox variable to use it with Wayland.
-if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
-	export MOZ_ENABLE_WAYLAND=1
 fi
 
 # Show a random colorscript whenever I open the terminal.
