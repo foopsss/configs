@@ -14,6 +14,9 @@
 	# Prompt format.
 	PS1="${RED_BD}[${RESET}${YELLOW_BD}\u${RESET}${GREEN_BD}@${RESET}${SKYBLUE_BD}\h${RESET} ${PINK_BD}\w${RESET}${RED_BD}]${RESET} ${YELLOW2_BD}⚡${RESET} "
 
+# Variables.
+github="$HOME/Documentos/GitHub"
+
 # Aliases.
 
 	# Directories.
@@ -28,9 +31,6 @@
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
 	alias wikibot="cd Documentos/bot && source bin/activate && cd pywikibot && python pwb.py login"
-
-# Variables.
-github="$HOME/Documentos/GitHub"
 
 # Functions.
 scrub_patch() {
