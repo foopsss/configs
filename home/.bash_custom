@@ -23,9 +23,9 @@ github="$HOME/Documentos/GitHub"
 	alias gitdir="cd $github"
 
 	# Scripts.
-	alias copy="cd $github/scripts/Backups/Bash && bash Backups.sh && cd"
-	alias adbtool="cd $github/scripts/ADB/Bash/ && bash ADBTool.sh && cd"
-	alias genscript="cd $github/scripts/Automatización/Gentoo/GenScript && bash GenScript.sh && cd"
+	alias copy="cd $github/scripts/bash && bash backups.sh && cd"
+	alias adbtool="cd $github/scripts/bash && bash ADBTool.sh && cd"
+	alias genscript="cd $github/scripts/bash && bash GenScript.sh && cd"
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
