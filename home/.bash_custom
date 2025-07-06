@@ -1,7 +1,7 @@
 # Bash prompt.
 	
 	# Bold colours.
-	GREEN_BD="\[\033[1;32m\]"
+	GREEN_BD="\[\e[1;38;5;034m\]"
 	YELLOW_BD="\[\e[1;38;5;220m\]"
 	YELLOW2_BD="\[\e[1;38;5;226m\]"
 	RED_BD="\[\e[1;38;5;196m\]"
