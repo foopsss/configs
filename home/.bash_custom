@@ -27,6 +27,9 @@ github="$HOME/Documentos/GitHub"
 	alias adbtool="cd $github/scripts/bash && bash ADBTool.sh && cd"
 	alias genscript="cd $github/scripts/python && python genscript.py && cd"
 
+    # UTN.
+    alias pharo="cd Descargas/pharo && bash pharo-launcher-ui"
+
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
