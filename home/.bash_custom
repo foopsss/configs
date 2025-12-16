@@ -24,11 +24,8 @@ github="$HOME/Documentos/GitHub"
 
 	# Scripts.
 	alias copy="cd $github/scripts/bash && bash backups.sh && cd"
-	alias adbtool="cd $github/scripts/bash && bash ADBTool.sh && cd"
+	alias adbscript="cd $github/scripts/python && python adbscript.py && cd"
 	alias genscript="cd $github/scripts/python && python genscript.py && cd"
-
-    # UTN.
-    alias pharo="cd Descargas/pharo && bash pharo-launcher-ui"
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
