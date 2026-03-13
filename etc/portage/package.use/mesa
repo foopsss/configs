@@ -1,0 +1,2 @@
+# Added "-vaapi" cause I'm not using hardware that has VA-API support present in Mesa.
+media-libs/mesa -vaapi

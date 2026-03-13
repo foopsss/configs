@@ -1,0 +1,14 @@
+# Hook for sys-apps/systemd.
+# The idea is to update the fake GRUB efi binary (grubx64.efi) used for loading systemd-boot through shim.
+
+post_pkg_postinst() {
+    ebegin "Copying systemd-boot to the location expected by shim..."
+    local return=0
+    local bootpath=$(bootctl -p)
+    local sdbootpath=${bootpath}/EFI/systemd/systemd-bootx64.efi
+    local grub4shimpath=${bootpath}/EFI/systemd/grubx64.efi
+
+    bootctl --no-variables --graceful update
+    cp ${sdbootpath} ${grub4shimpath} || ( return=1 )
+    eend ${return} || ewarn "Failed to copy systemd-boot to location expected by shim"
+}

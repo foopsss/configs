@@ -1,0 +1,3 @@
+# Added "mtp" to compile the Media Transfer Protocol support in and "gphoto2" to add support for digital cameras.
+# Added "-cdda" and "-cdr" to remove support for CD and DVD, since my machine doesn't support those.
+gnome-base/gvfs gphoto2 mtp -cdda -cdr

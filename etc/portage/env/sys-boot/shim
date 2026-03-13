@@ -1,0 +1,19 @@
+# Hook for sys-boot/shim.
+# The idea is to update the shim files after every update.
+#
+# Based on the hook available at: https://wiki.gentoo.org/wiki/Systemd/systemd-boot#ESP_file_update_process.
+# However, the locations are different since I am working with the locations shown in: https://wiki.gentoo.org/wiki/Shim#systemd-boot.
+
+post_pkg_postinst() {
+    ebegin "Updating shim..."
+    local return=0
+    local bootpath=$(bootctl -p)
+    local shim=${EROOT}/usr/share/shim/BOOTX64.EFI
+    local mm=${EROOT}/usr/share/shim/mmx64.efi
+
+    # Copy shim to ${ESP}/EFI/systemd/shimx64.efi.
+    cp "${shim}" "${bootpath}/EFI/systemd/shimx64.efi" || ( ewarn "Failed to install shim" && return=1 )
+    # And copy the corresponding MokManager
+    cp "${mm}" "${bootpath}/EFI/systemd/" || ( ewarn "Failed to install MokManager" && return=1 )
+    eend ${return} || ewarn "Updating shim failed"
+}

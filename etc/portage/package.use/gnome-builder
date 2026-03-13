@@ -1,0 +1,5 @@
+# Added "clang" to get the C/C++ support offered by the compiler and its related tools.
+# Added "webkit" to load webpages and Markdown files inside of Builder through net-libs/webkit-gtk.
+# Added "-d-spy" and "-sysprof" because I don't need D-Spy or Sysprof.
+# Added "-flatpak" and "-spell" because I don't need Flatpak or dictionary support.
+dev-util/gnome-builder clang webkit -d-spy -flatpak -spell -sysprof

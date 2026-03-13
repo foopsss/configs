@@ -1,0 +1,3 @@
+# Added "boot" to use systemd-boot.
+# Added "qrcode" to add support for generating QR codes when a boot failure happens.
+sys-apps/systemd boot qrcode

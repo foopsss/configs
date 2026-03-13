@@ -1,0 +1,15 @@
+# Hook for x11-apps/xinit.
+# This hook changes the extension of the Xsession.desktop file at
+# "/usr/share/xsessions" to make sure it does not show up on GDM.
+# The "GNOME on X.org" entry is all I need.
+post_pkg_postinst() {
+    local xsession_loc=${EROOT}/usr/share/xsessions/Xsession.desktop
+
+    if [[ -e ${xsession_loc} ]]; then
+        ebegin "Removing some custom X session files..."
+        local return=0
+        local xsession_backup_loc=${EROOT}/usr/share/xsessions/Xsession.backup
+        mv -f ${xsession_loc} ${xsession_backup_loc} || ( return=1 )
+        eend ${return} || ewarn "No se pudo renombrar ${xsession_loc}"
+    fi
+}

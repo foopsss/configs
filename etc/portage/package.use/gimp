@@ -1,0 +1,2 @@
+# Added "-alsa" to disable ALSA support and "-mng" to disable support for the MNG format.
+media-gfx/gimp -alsa -mng

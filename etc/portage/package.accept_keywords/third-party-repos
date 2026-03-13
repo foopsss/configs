@@ -1,0 +1,5 @@
+# Packages from ::ppfeufer-gentoo-overlay.
+dev-vcs/github-desktop
+
+# Packages from ::foopsss-gentoo-overlay.
+app-misc/shell-color-scripts

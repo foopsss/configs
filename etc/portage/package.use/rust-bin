@@ -1,0 +1,3 @@
+# Added "clippy", "rust-analyzer" and "rustfmt" to add support for Clippy, rust-analyzer and rustfmt.
+# Added "rust-src" to install rust-src, since it is requested by rust-analyzer when running it.
+dev-lang/rust-bin clippy rust-analyzer rustfmt rust-src

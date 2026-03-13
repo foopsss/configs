@@ -1,0 +1,3 @@
+# Added "flatpak" to enable Flatpak support.
+# Added "sound-server" to use PipeWire as the sound server instead of PulseAudio.
+media-video/pipewire flatpak sound-server

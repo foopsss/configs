@@ -1,0 +1,2 @@
+# Added "-daemon" to make sure that media-sound/pulseaudio-daemon is not installed.
+media-sound/pulseaudio -daemon

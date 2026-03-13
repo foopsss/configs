@@ -1,0 +1,3 @@
+# Added "emoji" and "ms" to also fetch fonts with emoji support and Microsoft's fonts.
+# Added "-latin" cause I don't need additional latin fonts.
+media-fonts/fonts-meta emoji ms -latin

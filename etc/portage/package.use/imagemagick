@@ -1,0 +1,3 @@
+# Added "-cxx" and "-lcms" to remove build support for C++ and support for a color management engine.
+# Added "-tiff" to remove support for the TIFF file format.
+media-gfx/imagemagick -cxx -lcms -tiff

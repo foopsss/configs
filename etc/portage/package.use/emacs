@@ -1,0 +1,4 @@
+# Added "gtk", "gui", "toolkit-scroll-bars" and "-X" to use GTK
+# as the GUI library and to force the use of Wayland.
+# Added "tree-sitter" to compile support for dev-libs/tree-sitter.
+app-editors/emacs gtk gui toolkit-scroll-bars tree-sitter -X

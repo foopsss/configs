@@ -1,0 +1,3 @@
+# Added "bash-completion", "gnutls" and "uefi" to add support for Bash and UEFI.
+# Added "nvme" and "tpm" to add support for the NVME and TPM plugins.
+sys-apps/fwupd bash-completion gnutls nvme tpm uefi
