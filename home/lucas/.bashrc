@@ -13,10 +13,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# Set radeonsi as the driver for VDPAU. Normally, VDPAU sets it
-# correctly by default, but this is just to make sure.
-export VDPAU_DRIVER=radeonsi
-
 # Export a Firefox variable to use it with Wayland.
 if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
 	export MOZ_ENABLE_WAYLAND=1
