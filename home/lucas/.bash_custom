@@ -23,7 +23,7 @@ github="$HOME/Documentos/GitHub"
 	alias gitdir="cd $github"
 
 	# Scripts.
-	alias copy="cd $github/scripts/python && python copy.py && cd"
+	alias copy="cd $github/scripts/python && python copyconfigs.py && cd"
 	alias adbscript="cd $github/scripts/python && python adbscript.py && cd"
 	alias genscript="cd $github/scripts/python && python genscript.py && cd"
 
