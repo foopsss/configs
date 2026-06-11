@@ -6,6 +6,7 @@ app-arch/unzip
 app-arch/zip
 app-backup/snapper
 app-editors/gnome-text-editor
+app-editors/helix
 app-eselect/eselect-repository
 app-misc/shell-color-scripts
 app-portage/eix

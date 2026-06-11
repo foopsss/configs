@@ -1,0 +1,8 @@
+# Otros temas que me gustan: "ashen", "autumn", "carbon", "darcula",
+# "flexoki_dark", "focus_nova", "gruvbox"
+theme = "dracula"
+
+[editor]
+cursorline = true
+color-modes = true
+rulers = [80]
