@@ -1,0 +1,2 @@
+# "lame" is needed for MP3 encoding support when using yt-dlp.
+media-video/ffmpeg lame

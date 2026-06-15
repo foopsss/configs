@@ -1,5 +1,6 @@
-# Packages from ::gentoo.
-=media-gfx/loupe-49.2
+# Packages from ::gentoo that have no stable keywords at all.
+app-misc/zellij
+media-gfx/loupe
 
 # Packages from ::dlang.
 # Many packages require keywording, so it's probably best to just

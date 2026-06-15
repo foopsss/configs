@@ -7,8 +7,10 @@ app-arch/zip
 app-backup/snapper
 app-editors/gnome-text-editor
 app-editors/helix
+app-editors/nano
 app-eselect/eselect-repository
 app-misc/shell-color-scripts
+app-misc/zellij
 app-portage/eix
 app-portage/genlop
 app-portage/gentoolkit
@@ -45,6 +47,7 @@ media-video/pipewire
 media-video/totem
 media-video/wireplumber
 net-misc/onedrive
+net-misc/yt-dlp
 net-wireless/iw
 sys-apps/flatpak
 sys-apps/fwupd

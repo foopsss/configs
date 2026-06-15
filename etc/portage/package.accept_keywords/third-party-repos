@@ -1,5 +1,8 @@
-# Packages from ::ppfeufer-gentoo-overlay.
+# Here I list packages from third party repos that I would
+# like to use but don't have stable keywords.
+
+## Packages from ::ppfeufer-gentoo-overlay.
 dev-vcs/github-desktop
 
-# Packages from ::foopsss-gentoo-overlay.
+## Packages from ::foopsss-gentoo-overlay.
 app-misc/shell-color-scripts
