@@ -1,0 +1,21 @@
+layout {
+	tab hide_floating_panes=true {
+		pane split_direction="vertical" {
+			pane {
+				name "editor"
+				command "hx"
+				size "60%"
+			}
+			pane {
+				name "dev-term"
+				size "40%"
+				cwd "$HOME/Documentos/GitHub"
+			}
+		}
+		pane {
+    		size 1
+    		borderless true
+       		plugin location="zellij:status-bar"
+    	}
+    }
+}

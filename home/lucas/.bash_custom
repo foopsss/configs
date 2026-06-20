@@ -31,6 +31,7 @@ github="$HOME/Documentos/GitHub"
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
 	alias wikibot="cd Documentos/bot && source bin/activate && python pwb.py login"
+	alias zljhx="zellij --layout /home/lucas/.config/zellij/helix.kdl"
 
 # Functions.
 scrub_patch() {
