@@ -1,0 +1,5 @@
+# I am not interested in KDE packages since I don't use KDE.
+kde-apps/*
+kde-apps/*
+kde-misc/*
+kde-plasma/*

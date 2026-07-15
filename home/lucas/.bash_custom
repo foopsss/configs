@@ -15,23 +15,25 @@
 	PS1="${RED_BD}[${RESET}${YELLOW_BD}\u${RESET}${GREEN_BD}@${RESET}${SKYBLUE_BD}\h${RESET} ${PINK_BD}\w${RESET}${RED_BD}]${RESET} ${YELLOW2_BD}⚡${RESET} "
 
 # Variables.
-github="$HOME/Documentos/GitHub"
+export DOCUMENTS_FOLDER="$(xdg-user-dir DOCUMENTS)"
+CONFIG_FOLDER="$HOME/.config"
+GITHUB_FOLDER="$DOCUMENTS_FOLDER/GitHub"
 
 # Aliases.
 
 	# Directories.
-	alias gitdir="cd $github"
+	alias gitdir="cd $GITHUB_FOLDER"
 
 	# Scripts.
-	alias copy="cd $github/scripts/python && python copyconfigs.py && cd"
-	alias adbscript="cd $github/scripts/python && python adbscript.py && cd"
-	alias genscript="cd $github/scripts/python && python genscript.py && cd"
+	alias copy="cd $GITHUB_FOLDER/scripts/python && python copyconfigs.py && cd"
+	alias adbscript="cd $GITHUB_FOLDER/scripts/python && python adbscript.py && cd"
+	alias genscript="cd $GITHUB_FOLDER/scripts/python && python genscript.py && cd"
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
-	alias wikibot="cd Documentos/bot && source bin/activate && python pwb.py login"
-	alias zljhx="zellij --layout /home/lucas/.config/zellij/helix.kdl"
+	alias wikibot="cd DOCUMENTS_FOLDER/bot && source bin/activate && python pwb.py login"
+	alias zljhx="zellij --layout $CONFIG_FOLDER/zellij/helix.kdl"
 
 # Functions.
 scrub_patch() {

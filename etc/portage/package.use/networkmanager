@@ -1,2 +1,4 @@
-# Added "-gtk-doc", "-ppp" and "-wext" to remove support for gtk-doc based developer documentation, mobile broadband and PPPoE connections and the Wireless Extensions API.
+# Added "-gtk-doc", "-ppp" and "-wext" to remove support for gtk-doc based
+# developer documentation, mobile broadband and PPPoE connections and the
+# Wireless Extensions API.
 net-misc/networkmanager -gtk-doc -ppp -wext

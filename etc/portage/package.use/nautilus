@@ -1,2 +1,3 @@
-# Added "-previewer" to not build the previewer that comes with Nautilus, so I can drop the net-libs/webkit-gtk dependency.
+# Added "-previewer" to not build the previewer that comes with Nautilus,
+# so I can drop the net-libs/webkit-gtk and app-text/evince dependencies.
 gnome-base/nautilus -previewer

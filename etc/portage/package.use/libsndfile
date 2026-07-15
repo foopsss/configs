@@ -1,0 +1,3 @@
+# Added "minimal" to avoid getting circular dependency error when emerging
+# GNOME and libpulse.
+media-libs/libsndfile minimal

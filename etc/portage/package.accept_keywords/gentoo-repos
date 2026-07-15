@@ -6,7 +6,3 @@ media-gfx/loupe
 # Many packages require keywording, so it's probably best to just
 # keyword them all.
 */*::dlang
-
-# Packages from ::haskell.
-# Haskell has no stable keywords in Gentoo, so everything is unmasked.
-*/*::haskell

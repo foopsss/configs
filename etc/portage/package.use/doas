@@ -1,2 +1,4 @@
-# Added "persist" to remember an authenticated user and not require confirmation by password for a time period of five minutes after the last doas command.
+# Added "persist" to remember an authenticated user and not require
+# confirmation by password for a time period of five minutes after
+# the last doas command.
 app-admin/doas persist

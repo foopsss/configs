@@ -1,4 +1,4 @@
-# Added "systemd-boot" to add support for systemd-boot.
+# Added "systemd" and "systemd-boot" to add support for systemd-boot.
 # Added "dracut" to use dracut to build the initramfs.
 # Added "uki" to build Unified Kernel Images.
-sys-kernel/installkernel dracut systemd-boot uki
+sys-kernel/installkernel dracut systemd systemd-boot uki
