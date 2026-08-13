@@ -32,6 +32,7 @@ GITHUB_FOLDER="$DOCUMENTS_FOLDER/GitHub"
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
+	alias jpgpdf="mogrify -resize 30% *.jpg && magick *.jpg my_pdf.pdf"
 	alias wikibot="cd DOCUMENTS_FOLDER/bot && source bin/activate && python pwb.py login"
 	alias zljhx="zellij --layout $CONFIG_FOLDER/zellij/helix.kdl"
 
