@@ -16,6 +16,7 @@
 
 # Variables.
 DOCUMENTS_FOLDER="$(xdg-user-dir DOCUMENTS)"
+DOWNLOADS_FOLDER="$(xdg-user-dir DOWNLOAD)"
 CONFIG_FOLDER="$HOME/.config"
 GITHUB_FOLDER="$DOCUMENTS_FOLDER/GitHub"
 
@@ -33,7 +34,7 @@ GITHUB_FOLDER="$DOCUMENTS_FOLDER/GitHub"
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
 	alias makepdf="magick \*.png my_pdf.pdf"
 	alias jpgpdf="mogrify -resize 30% *.jpg && magick *.jpg my_pdf.pdf"
-	alias wikibot="cd DOCUMENTS_FOLDER/bot && source bin/activate && python pwb.py login"
+	alias wikibot="cd $DOWNLOADS_FOLDER/pywikibot && source bin/activate && pwb login"
 	alias zljhx="zellij --layout $CONFIG_FOLDER/zellij/helix.kdl"
 
 # Functions.
