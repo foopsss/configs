@@ -26,14 +26,16 @@ GITHUB_FOLDER="$DOCUMENTS_FOLDER/GitHub"
 	alias gitdir="cd $GITHUB_FOLDER"
 
 	# Scripts.
-	alias copy="cd $GITHUB_FOLDER/scripts/python && python copyconfigs.py && cd"
 	alias adbscript="cd $GITHUB_FOLDER/scripts/python && python adbscript.py && cd"
+	alias contabilidad="cd $GITHUB_FOLDER/scripts/python && python contabilidad.py && cd"
+	alias copy="cd $GITHUB_FOLDER/scripts/python && python copyconfigs.py && cd"
 	alias genscript="cd $GITHUB_FOLDER/scripts/python && python genscript.py && cd"
 
 	# Miscellaneous.
 	alias battery="cat /sys/class/power_supply/BAT*/capacity"
-	alias makepdf="magick \*.png my_pdf.pdf"
+	alias joinpdf="pdfunite *.pdf output.pdf"
 	alias jpgpdf="mogrify -resize 30% *.jpg && magick *.jpg my_pdf.pdf"
+	alias makepdf="magick \*.png my_pdf.pdf"
 	alias wikibot="cd $DOWNLOADS_FOLDER/pywikibot && source bin/activate && pwb login"
 	alias zljhx="zellij --layout $CONFIG_FOLDER/zellij/helix.kdl"
 

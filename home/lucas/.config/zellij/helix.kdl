@@ -1,3 +1,5 @@
+pane_frame_style "full"
+
 layout {
 	tab hide_floating_panes=true {
 		pane split_direction="vertical" {
